@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Registration</title>
+    <link rel="stylesheet" href="week2-sales-reg.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div><a href="dashboard.html">Dashboard</a></div>
+        <div><a href="salesRegistration.html">Sales Management</a></div>
+        <div><a href="SupplierRegistration.html">Supplier Management</a></div>
+        <div><a href="StockManagement.html">Stock Management</a></div>
+        <div><a href="TransportManagement.html">Transport Management</a></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">
+        <form>
+          <!-- Sales Info -->
+          <section>
+            <h1>Sales Registration</h1>
+
+            <div class="input-container">
+              <div class="input-section">
+                <label for="salesDate">Sales Date</label>
+                <input type="date" id="salesDate" name="salesDate" />
+              </div>
+
+              <div class="input-section">
+                <label for="salesPerson">Sales Person</label>
+                <select id="salesPerson" name="salesPerson">
+                  <option value="">Select a representative</option>
+                  <option value="1">Dorcus Tumulamye</option>
+                  <option value="2">Edna Tukahiirwa</option>
+                  <option value="3">Blaire Tuhame</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <!-- Customer Details -->
+          <h2>Customer Details</h2>
+        
+
+          <section>
+            <div class="input-container">
+            <div class="input-section">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter full name"
+              />
+            </div>
+
+            <div class="input-section"> 
+              <label for="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+            </div>
+            
+          </section>
+
+          <br />
+
+          <section>
+            <div class="input-container">
+            <div class="input-section">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </div>
+
+            <div class="input-section">
+              <label for="customerType">Customer Type</label>
+              <select id="customerType" name="customerType">
+                <option value="">Select Customer type</option>
+                <option value="retail">Retail</option>
+                <option value="wholesale">Wholesale</option>
+              </select>
+            </div>
+            </div>
+          </section>
+
+          <!-- Items -->
+          <h2>Items</h2>
+
+          <section>
+            
+            <div class="input-container"> 
+            <div class="input-section">
+              <label for="pdtId">Product ID</label>
+              <input type="text" id="pdtId" name="pdtId" />
+            </div>
+
+            <div class="input-section">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" />
+            </div>
+
+            <div class="input-section">
+              <label for="unitPrice">Unit Price</label>
+              <input
+                type="number"
+                id="unitPrice"
+                name="unitPrice"
+                step="0.01"
+              />
+            </div>
+            </div>
+          </section>
+
+          <br />
+
+          <!-- Buttons -->
+           <div class="home">
+          <!-- <section id="btn-section"> -->
+            <button type="reset">Cancel</button>
+            <button type="submit">Submit</button>
+          <!-- </section> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
